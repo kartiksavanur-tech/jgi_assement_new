@@ -37,11 +37,23 @@
 @import "@ionic/angular/css/palettes/dark.system.css";
 
 :root {
-    --pri_color: #262262;
+    --ion-background-color: #ffffff;
+	--ion-background-color-rgb: 255,255,255;
+	--ion-text-color: #000000;
     --white_color: #fff;
     --ion-footer-background-color: #fff;
+    --ion-toolbar-color: #000;
 }
-
+:host {
+    --background: var(--ion-toolbar-background, var(--ion-color-step-50, var(--ion-background-color-step-50, #f7f7f7)));
+    --color: var(--ion-toolbar-color, var(--ion-text-color, #fff));
+    --border-color: var(--ion-toolbar-border-color, var(--ion-border-color, var(--ion-color-step-150, var(--ion-background-color-step-150, fff(0, 0, 0, 0.2)))));
+    --padding-top: 3px;
+    --padding-bottom: 3px;
+    --padding-start: 4px;
+    --padding-end: 4px;
+    --min-height: 44px;
+}
 .dashboard_header {
     padding: 13px 20px;
 }
@@ -406,4 +418,6 @@ input[type="text"]:focus {
     padding-inline-start: 30px;
     margin-inline-end: 30px;
     color: #000;
+    text-align: center;
+    display: block;
 }
