@@ -1,0 +1,409 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+:root {
+    --pri_color: #262262;
+    --white_color: #fff;
+    --ion-footer-background-color: #fff;
+}
+
+.dashboard_header {
+    padding: 13px 20px;
+}
+.bg_c {
+    background-color: #fff;
+}
+.back {
+width: 31px;
+height: 31px;
+top: 36px;
+left: 30px;
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+
+}
+.ion-background-color{
+    background-color: #fff;
+}
+.textC{
+    color: #383838;
+    font-weight: 500;
+}
+.ion-footer {
+    background-color: #f8f8f8; /* Adjust the background color */
+    padding: 0;
+  }
+  
+  .ion-toolbar {
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  
+  .ion-icon {
+    font-size: 24px; /* Adjust icon size */
+    color: #488aff; /* Adjust icon color */
+  }
+
+  * {
+    font-family: "Manrope", sans-serif;
+  }
+
+.mr_15 {
+    margin-right: 15px;
+}
+.ml_10 {
+    margin-left: 10px;
+}
+.position-relative {
+    position: relative;
+}
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.header_toolbar {
+    --min-height: auto !important;
+    padding: 0 !important;
+}
+.header_content {
+    padding: 18px 15px 15px;
+    background: #FAFAFA;
+    box-shadow: 0px 0px 6px 1px #00000014;
+}
+ion-header {
+    box-shadow: none !important;
+}
+.font_19 {
+    font-size: 19px;
+    line-height: 25px;
+}
+.fw-extrabold {
+    font-weight: 800;
+}
+.text-lightblack {
+    color: #383838;
+}
+.mb_15 {
+    margin-bottom: 15px;
+}
+.search_section .search_input {
+    padding: 0;
+}
+.search_section ion-icon.searchbar-search-icon, .searchbar-clear-button.sc-ion-searchbar-md {
+    display: none !important;
+}
+// .search_section .search_input.searchbar-has-focus.search-should-show-clear ion-icon.searchbar-search-icon {
+//     display: none;
+// }
+.search_section .search_input input {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    padding: 14.5px 50px;
+    border: 1px solid #EBEBEB;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px 2px #0000000D;
+}
+.search_section {
+    position: relative;
+}
+.search_icon_field {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.filter_icon_field {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-left: 1px solid #EBEBEB;
+    padding-left: 15px;
+}
+.text-blue {
+    color: #7527F5;
+}
+.font_18 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.text-grey {
+    color: #A8A8A8;
+}
+.member_content_blk {
+    padding: 30px 23px;
+    background: #FFFFFF;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .col-md-6 {
+    flex: 0 0 auto;
+    width: 50% !important;
+    max-width: 50% !important;
+}
+.m-0 {
+    margin: 0;
+}
+.member_blk {
+    padding: 5px 10px 4px 13px;
+    background: linear-gradient(312.82deg, rgba(245, 39, 163, 0.5) -56.86%, rgba(255, 255, 255, 0) 105.11%);
+    height: 123px;
+    box-shadow: -1px 2px 6px 0px #00000021;
+    border-radius: 5px;
+}
+.member_span_width {
+    width: 50%;
+    display: flex;
+}
+.mr_5 {
+    margin-right:5px;
+}
+img.club_mem_icon {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+.member_content_blk .row {
+    margin: 0 -9.5px;
+}
+.member_content_blk .row>div {
+    padding: 0 9.5px ;
+}
+.corportae_blk {
+    background: linear-gradient(312.82deg, rgba(39, 121, 245, 0.59) -56.86%, rgba(255, 255, 255, 0) 105.11%);
+}
+.font_12 {
+    font-size: 12px;
+    line-height: 16px;
+} 
+.font_10 {
+    font-size: 10px;
+    line-height: 12px;
+} 
+.fw-med {
+    font-weight: 500;
+}
+.text-black {
+    color:black;
+}
+.flex-column {
+    flex-direction: column;
+}
+.p-0 {
+    padding: 0;
+}
+.top_cuisines_blk {
+    padding: 4px 0 13px 29px;
+    background: #F9F8F8;
+}
+.top_cuisines_blk .top_cusine_content {
+    list-style: none;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 8px 8px 19px 8px;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.1411764706);
+    height: 97px;
+    min-width: 65px;
+}
+.mb_9 {
+    margin-bottom: 9px;
+}
+.top_cuisines_blk .top_cusine_content:not(:last-child) {
+    margin-right: 24px;
+}
+.top_cuisines_blk ul {
+    overflow: auto;
+}
+.mb_5 {
+    margin-bottom: 5px;
+}
+.mt_0 {
+    margin-top: 0;
+} 
+.trending_offer_section {
+    padding: 16px 16px 13px 31px;
+    background: #F9F8F8;
+}
+.offer_info {
+    position: absolute;
+    top: -4px;
+    right: 12px;
+}
+.table-responsive {
+    overflow: auto;
+}
+.trending_offer_section .trending_offer_content {
+    list-style: none;
+    margin-right: 9px;
+    min-width: 139px;
+}
+.mb_12 {
+    margin-bottom: 12px;
+}
+.fw-reg {
+    font-weight: 400;
+}
+.font_11 {
+    font-size: 11px;
+    line-height: 15px;
+}
+.popular_brand_blk {
+    padding: 14px 20px 11px 23px;
+    background: #F9F8F8;
+}
+li.popular_brand_content {
+    list-style: none;
+    min-width: 89px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.1411764706);
+    background: #FFFFFF;
+    border-radius: 28px;
+    padding: 12px 9px 22px 8px;
+    height: 171px;
+}
+li.popular_brand_content:not(:last-child) {
+    margin-right: 8px;
+}
+.text-center {
+    text-align: center;
+}
+.footer_icon{
+    width: 28.25px;
+height: 26.62px;
+top: 23px;
+left: 36px;
+}
+.text_white{
+    color: #A8A8A8;
+}
+.text_light_grey{
+    color: #6E6D70;
+}
+.text_lgreen{
+    color: #42A606;
+}
+
+.success_popup {
+    border-radius: 8px;
+    background: #fff;
+    padding: 30px;
+}
+.success_circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 3px solid var(--pri_color);
+    background-color: #F1F1FF;
+}
+.list_content {
+    padding: 18px 15px 15px;
+    background: #fff;
+    box-shadow: 0px 0px 6px 1px #00000014;
+}
+.offer_d {
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.max_W{
+    max-width: 50%;
+}
+.offer_color{
+    background-color: #F5F7F8;
+}
+.font_20 {
+    color: #6E6D70;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    /* line-height: 64px; */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+input[type="number"] {
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    padding: 15px 15px;
+    outline: none;
+    font-size: 16px;
+    width: 95%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+input[type="text"]::placeholder {
+    color: #888; /* Color of the placeholder text */
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF; /* Border color on focus */
+}
+.mar_20{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 14;
+    color: #000;
+}
+.mar_10{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    padding-inline-start: 30px;
+    margin-inline-end: 30px;
+    color: #000;
+}

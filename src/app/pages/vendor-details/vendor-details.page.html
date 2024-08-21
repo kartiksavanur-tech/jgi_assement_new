@@ -1,0 +1,74 @@
+<ion-header>
+  <div class="dashboard_header bg_c d-flex justify-content-between align-items-center">
+      <img src="assets\images\back.png" class="back" (click)="onBack()">
+      <img src="assets/images/shoping-cart-icon.svg" class="back" alt="icon">
+</div>
+</ion-header>
+
+<ion-content class="dashboard_header bg_c d-flex justify-content-between align-items-center">
+  <div class="bg_c dashboard_header d-flex flex-column">
+    <h3 class="textC">BYG Brewski</h3>
+    <span style="color:#A8A8A8">Chinese | Continental</span>
+    <span class="font_14">Indiranagar | 3.0 kms</span>
+    <span class="font_14">Delivery to home</span>
+
+    <div class="d-flex flex-row justify-content-between" style="padding: 20;">
+      <img class="align-items-right" src="assets/images/Group 165.svg">
+      <span class="textC justify-content-middle font_14">₹ 250 for two</span>
+      <span class="textC justify-content-middle font_14">Open now</span>
+    </div>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="d-flex flex-column offer_d offer_color">
+        <span class="textC justify-content-middle font_14">FLAT Rs. 75 off</span>
+      <span class="textC justify-content-middle font_10">Upto 100 rs off | Use code TIPLRFF</span>
+      </div>
+      <div class="d-flex flex-column offer_d offer_color">
+        <span class="textC justify-content-middle font_14">BUY 1 GET 1 free</span>
+      <span class="textC justify-content-middle font_10">On Main course only | Use code TIPLR12</span>
+      </div>
+    </div>
+  </div>
+  <h5 class="font_18 fw-extrabold text-black mb_9 mt_0 header_content">Explore Restaurants</h5>
+  <div class="d-flex flex-row list_content" *ngFor="let listData of list ">
+      <div class="d-flex flex-column justify-content-between">
+        <img class="align-items-right max_W" src="assets/images/bestseller.svg">
+    <span class="textC justify-content-left font_16">Margherita Pizza</span>
+    <span class="textC justify-content- left font_12">Freshly baked bread topped with tomato sauce, mozerella cheese, and basil. Serves two</span>
+    <span class="textC justify-content-left font_16">₹279 ( 20% Off )</span>
+  </div>
+  <img class="align-items-center" src="{{listData}}">
+  </div>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="bg_c">
+    <div slot="start" class="active w-25 footer_menu" (click)="onBack()">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/motorbike.png" alt="home_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Delivery</span>
+      </div>
+    </div>
+    <div slot="start" class="w-25 footer_menu">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/badge.png" alt="trip_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Clubs</span>
+      </div>
+    </div>
+    <div slot="start" class="w-25 footer_menu">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/briefcase.png" alt="message_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Corporate</span>
+      </div>
+    </div>
+    <div slot="start" class="w-25 footer_menu" (click)="openModal()">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/account.png" alt="profile_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Profile</span>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>
+

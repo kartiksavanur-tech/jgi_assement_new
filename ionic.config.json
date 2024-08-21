@@ -1,0 +1,7 @@
+{
+  "name": "jgi_assesment",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

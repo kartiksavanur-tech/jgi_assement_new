@@ -1,0 +1,192 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header_toolbar">
+   <div class="header_content">
+    <div class="d-flex align-items-center justify-content-between mb_15">
+      <div class="d-flex align-items-center">
+        <img src="assets/images/location-icon.svg" alt="icon" class="mr_15">
+        <span class="font_19 fw-extrabold text-lightblack">RT Nagar</span>
+        <img src="assets/images/dropdown-icon.svg" alt="icon" class="ml_10">
+      </div>
+      <img src="assets/images/shoping-cart-icon.svg" alt="icon">
+   </div>
+   <div class="search_section">
+      <ion-searchbar show-clear-button="focus" class="search_input" placeholder="Search item, restaurant or place...."></ion-searchbar>
+      <img src="assets/images/search-icon.svg" alt="icon" class="search_icon_field">
+      <img src="assets/images/filter-icon.svg" alt="icon" class="filter_icon_field">
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="member_content_blk">
+    <div class="row">
+    <div class="col-md-6">
+      <div class="member_blk position-relative">
+        <h5 class="font_18 fw-extrabold text-blue m-0">Clubs</h5>
+        <span class="font_12 fw-extrabold text-grey member_span_width">Member Exclusive</span>
+        <img src="assets/images/club-member-icon.svg" alt="icon" class="club_mem_icon">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="member_blk corportae_blk position-relative">
+        <h5 class="font_18 fw-extrabold text-blue m-0">Corporate</h5>
+        <span class="font_12 fw-extrabold text-grey member_span_width">Corporate Exclusive</span>
+        <img src="assets/images/corporate-member-icon.svg" alt="icon" class="club_mem_icon">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="top_cuisines_blk">
+    <h5 class="font_18 fw-extrabold text-black mb_9 mt_0">Top Cuisines</h5>
+    <ul class="p-0 m-0 d-flex align-items-center">
+      <li class="top_cusine_content d-flex align-items-center flex-column justify-content-between">
+        <img src="assets/images/pizza-image.svg" alt="icon" class="mb_5">
+        <span class="font_12 fw-med text-black">Pizza</span>
+      </li>
+      <li class="top_cusine_content d-flex align-items-center flex-column justify-content-between">
+        <img src="assets/images/backery-item-image.svg" alt="icon" class="mb_5">
+        <span class="font_12 fw-med text-black">Bakery</span>
+      </li>
+      <li class="top_cusine_content d-flex align-items-center flex-column justify-content-between">
+        <img src="assets/images/chines-food-image.svg" alt="icon" class="mb_5">
+        <span class="font_12 fw-med text-black">Chinese</span>
+      </li>
+      <li class="top_cusine_content d-flex align-items-center flex-column justify-content-between">
+        <img src="assets/images/burger-image.svg" alt="icon" class="mb_5">
+        <span class="font_12 fw-med text-black">Burgers</span>
+      </li>
+      <li class="top_cusine_content d-flex align-items-center flex-column justify-content-between">
+        <img src="assets/images/burger-image.svg" alt="icon" class="mb_5">
+        <span class="font_12 fw-med text-black">Burgers</span>
+      </li>
+      <li class="top_cusine_content d-flex align-items-center flex-column justify-content-between">
+        <img src="assets/images/pizza-image.svg" alt="icon" class="mb_5">
+        <span class="font_12 fw-med text-black">Pizza</span>
+      </li>
+    </ul>
+  </div>
+  <div class="banner_section w-100">
+    <img src="assets/images/order-banner1-image.svg" alt="icon" class="w-100">
+  </div>
+  <div class="trending_offer_section mb_12">
+    <h5 class="font_18 fw-extrabold text-black mb_9 mt_0">Trending Offers</h5>
+    <ul class="p-0 m-0 d-flex align-items-center table-responsive">
+      <li class="trending_offer_content d-flex align-items-center flex-column justify-content-between position-relative">
+        <img src="assets/images/tranding-offer-image1.svg" alt="icon" class="">
+        <img src="assets/images/offer-info-image.svg" alt="icon" class="offer_info">
+      </li>
+      <li class="trending_offer_content d-flex align-items-center flex-column justify-content-between position-relative">
+        <img src="assets/images/tranding-offer-image1.svg" alt="icon" class="">
+        <img src="assets/images/offer-info-image.svg" alt="icon" class="offer_info">
+      </li>
+      <li class="trending_offer_content d-flex align-items-center flex-column justify-content-between position-relative">
+        <img src="assets/images/tranding-offer-image1.svg" alt="icon" class="">
+        <img src="assets/images/offer-info-image.svg" alt="icon" class="offer_info">
+      </li>
+      <li class="trending_offer_content d-flex align-items-center flex-column justify-content-between position-relative">
+        <img src="assets/images/tranding-offer-image1.svg" alt="icon" class="">
+        <img src="assets/images/offer-info-image.svg" alt="icon" class="offer_info">
+      </li>
+    </ul>
+  </div>
+  <div class="popular_brand_blk">
+    <h5 class="font_18 fw-extrabold text-black mb_9 mt_0">Popular Brands</h5>
+    <ul class="p-0 m-0 d-flex align-items-center mb_12 table-responsive">
+      <li class="popular_brand_content d-flex align-items-center flex-column justify-content-between text-center" *ngFor="let list of foods">
+        <img src="{{list}}" alt="icon" class="mb_5">
+        <div>
+        <h6 class="font_12 fw-med text-black m-0">Mc Donalds</h6>
+        <span lass="font_11 fw-med text-black">32 min</span>
+      </div>
+    </li>
+    </ul>
+    <h5 class="font_11 text-lightblack fw-reg text-black mb_9 mt_0 text-center">+ 1274 people ordered from  these brands |  +930 people exploring</h5>
+  </div>
+
+  <h5 class="font_18 fw-extrabold text-black mb_9 mt_0 header_content">Favorites & Past Orders</h5>
+  <div class="row header_content">
+    <div class="col-md-6 d-flex flex-row">
+      <img class="align-items-center" src="assets/images/momos.svg">
+      <div class="d-flex flex-column justify-content-between">
+    <span class="textC justify-content-left font_14">Silhoutte</span>
+    <span class="textC justify-content-left font_12 text_light_grey">25 mins | 4.5</span>
+    <span class="textC justify-content-right font_12 text_lgreen">20% off upto 150</span>
+  </div>
+  </div>
+  <div class="col-md-6 d-flex flex-row">
+    <img class="align-items-center" src="assets/images/momos.svg">
+    <div class="d-flex flex-column justify-content-between">
+  <span class="textC justify-content-left font_14">Silhoutte</span>
+  <span class="textC justify-content-left font_12 text_light_grey">25 mins | 4.5</span>
+  <span class="textC justify-content-right font_12 text_lgreen">20% off upto 150</span>
+</div>
+</div>
+<div class="col-md-6 d-flex flex-row">
+    <img class="align-items-center" src="assets/images/momos.svg">
+    <div class="d-flex flex-column justify-content-between">
+  <span class="textC justify-content-left font_14">Silhoutte</span>
+  <span class="textC justify-content-left font_12 text_light_grey">25 mins | 4.5</span>
+  <span class="textC justify-content-right font_12 text_lgreen">20% off upto 150</span>
+</div>
+</div>
+<div class="col-md-6 d-flex flex-row">
+  <img class="align-items-center" src="assets/images/momos.svg">
+  <div class="d-flex flex-column justify-content-between">
+<span class="textC justify-content-left font_14">Silhoutte</span>
+<span class="textC justify-content-left font_12 text_light_grey">25 mins | 4.5</span>
+<span class="textC justify-content-right font_12 text_lgreen">20% off upto 150</span>
+</div>
+</div>
+</div>
+  <h5 class="font_18 fw-extrabold text-black mb_9 mt_0 header_content">Explore Restaurants</h5>
+  <div class="d-flex flex-column list_content" *ngFor="let listData of list " (click)="vendorDetail()">
+      <img class="align-items-center" src="{{listData}}">
+      <div class="d-flex flex-row justify-content-between">
+    <span class="textC justify-content-left font_18">BYG Brewski</span>
+    <img class="align-items-right" src="assets/images/Group 165.svg">
+  </div>
+  <div class="d-flex flex-row justify-content-between">
+    <span class="textC justify-content-left font_12">Indiranagar</span>
+    <span class="textC justify-content-right font_12">₹ 250 for two</span>
+  </div>
+  <div class="d-flex flex-row justify-content-between">
+    <span class="textC justify-content-left font_12 text_light_grey">Continental, Asian, Italian</span>
+    <span class="textC justify-content-right font_12 text_lgreen">Discount on Delivery</span>
+  </div>
+  <div class="d-flex flex-row justify-content-between">
+    <span class="textC justify-content-left font_10">128+ people have ordered from this place</span>
+    <img class="align-items-end" src="assets/images/mapicon.svg">
+    <span class="textC justify-content-right font_10">0.6 km</span>
+  </div>
+  </div>
+</ion-content>
+
+<ion-footer class="bg_c">
+  <ion-toolbar>
+    <div slot="start" class="active w-25 footer_menu">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/motorbike.png" alt="home_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Delivery</span>
+      </div>
+    </div>
+    <div slot="start" class="w-25 footer_menu">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/badge.png" alt="trip_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Clubs</span>
+      </div>
+    </div>
+    <div slot="start" class="w-25 footer_menu" (click)="vendorDetail()">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/briefcase.png" alt="message_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Corporate</span>
+      </div>
+    </div>
+    <div slot="start" class="w-25 footer_menu" (click)="login()">
+      <div class="d-flex flex-column align-items-center">
+        <img class="footer_icon" src="assets/images/account.png" alt="profile_icon">
+        <span class="d-block font_14 fw-reg text_white pt_5">Profile</span>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>
